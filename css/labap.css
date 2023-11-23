@@ -82,3 +82,30 @@ header,
     margin: 0;
 }
 
+#image-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Añade un borde para resaltar la imagen */
+    padding: 5px; /* Añade un poco de espacio alrededor de la imagen */
+    border-radius: 5px; /* Añade bordes redondeados a la imagen */
+}
+
+/* Estilo para el botón de retroceso */
+.back-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}

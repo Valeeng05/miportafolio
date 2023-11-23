@@ -3,14 +3,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Centrar verticalmente */
 }
 
 #content {
+    width: 70%;
     max-width: 800px;
-    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
 .center-text {
@@ -27,7 +31,7 @@ body {
 
 #image-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .hoverable {
@@ -57,4 +61,24 @@ body {
     padding: 1em;
     background-color: #7b68ee;
     color: #fff;
+    width: 70%;
+    min-height: 50px;
+    margin-top: auto;
+    margin-bottom: 0; /* Eliminar cualquier margen inferior */
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 800px;
 }
+
+/* Eliminar márgenes de las secciones */
+header,
+.about,
+.portfolio,
+.contact {
+    margin: 0;
+}
+
+/* Eliminar espacio alrededor de las imágenes en #image-container */
+#image-container img {
+    margin: 0;
+}
+

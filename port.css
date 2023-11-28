@@ -1,51 +1,91 @@
+//* Reset de Estilos y Configuraciones Generales */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFBF;
+    background-color: #0a0a23; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
-
-header,
-.about,
-.portfolio,
-.contact,
-.footer {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.sobrev
+{
+	background-color: #0a0a23; /* Fondo oscuro */
+}
+.portafolio
+{
+	height:1250PX;
+	background-color: #0a0a23; /* Fondo oscuro */
 }
 
-header {
+.container {
+    width: 100%;
+    max-width: 1200px; /* Puedes ajustar el ancho máximo según tus necesidades */
+}
+.about{
+	color:grey;
+}
+.header
+{
+	background-color:white;
+}
+.contact a
+{
+color:white;
+text-decoration: none ;
+}
+.contact
+{
+	color:white;	
+}
+.container-fluid,
+.about,
+.portfolio,
+.footer {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white; /* Azul oscuro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer1 {
     text-align: center;
     padding: 1em;
     background-color: #7b68ee;
     color: #fff;
     max-width: 800px;
     margin: 0 auto;
+    margin-top: auto;
 }
+
+/* Estilos del Encabezado */
+
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilos de Secciones Comunes */
 
 .about,
 .portfolio,
 .contact {
     max-width: 800px;
-    margin: 0 auto; /* Eliminar cualquier margen vertical */
-    padding: 20px;
-    background-color: #00AAE4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
+
+/* Estilos de Proyectos en la Sección de Portfolio */
 
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Puedes ajustar este margen según tus preferencias */
+    margin-bottom: 20px;
 }
 
 .project div {
@@ -79,6 +119,27 @@ header {
     margin-bottom: 10px;
 }
 
+/* Estilos del Pie de Página */
+
+.footer {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilos de la Barra de Navegación */
+
+.navbar {
+    padding: 2rem;
+    background-color: #1b1b32; /* Azul oscuro */
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos de la Sección "Sobre Mí" */
+
 .about img {
     display: block;
     margin: 20px auto;
@@ -87,12 +148,300 @@ header {
     width: 100px;
 }
 
-.footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #7b68ee;
-    color: #fff;
-    max-width: 800px;
-    margin: 0 auto; /* Eliminar cualquier margen vertical */
-    margin-top: auto;
+/* Estilos de la Sección "Experiencia" */
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
 }
+
+.seccion-clara {
+    color: black;
+    background-color:white ;
+}
+
+.experiencia .row div {
+    height: 300px;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+}
+
+/* Estilos de la Sección "Proyectos" */
+
+.proyectos-recientes {
+    padding: 40px;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto:hover {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Estilos de la Sección "Testimonios" */
+
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .conteiner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio.footer .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonio.info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+/* Estilos de la Sección "Contacto" */
+
+.contact {
+    padding: 40px 40px 80px 40px;
+}
+
+.contact .conteiner {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contact .rectangulo {
+    margin-top: -5rem;
+    background-color: #0d6efd; /* Azul claro */
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px;
+}
+
+.contact .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact .seccion-descripcion {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25rem 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact button:hover i {
+    color: black;
+}
+
+/* Estilos del Pie de Página */
+
+.footer {
+    min-height: 50px;
+    background-color: #1b1b32; /* Azul oscuro */
+    color: #fff;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    width: 50px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid #0a0a23; /* Fondo oscuro */
+}
+
+.iconos-redes-sociales a:hover i {
+    color: #0a0a23; /* Fondo oscuro */
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* Media Queries adicionales si es necesario */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    

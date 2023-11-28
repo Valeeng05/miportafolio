@@ -14,38 +14,34 @@ body {
 }
 .sobrev
 {
-	background-color: #0a0a23; /* Fondo oscuro */
-}
-.portafolio
-{
-	height:1250PX;
-	background-color: #0a0a23; /* Fondo oscuro */
+	justify-content:center;
+	width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px; /* Puedes ajustar el ancho máximo según tus necesidades */
-}
-.about{
-	color:grey;
-}
-.header
+.portafolio1
 {
-	background-color:white;
+	height:1250PX;
+
 }
 .contact a
 {
 color:white;
 text-decoration: none ;
 }
-.contact
-{
-	color:white;	
+.sobrev{
+	background-color:#1b1b32;
+	color:white;
 }
+
 .container-fluid,
 .about,
 .portfolio,
-.footer {
+.footer,
+.messi {
     width: 90%;
     box-sizing: border-box;
     margin: 0 auto;
@@ -53,11 +49,12 @@ text-decoration: none ;
     background-color: white; /* Azul oscuro */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+.messi{background-color:#1b1b32;
+color:white;}
 .footer1 {
     text-align: center;
     padding: 1em;
-    background-color: #7b68ee;
+    background-color:;
     color: #fff;
     max-width: 800px;
     margin: 0 auto;
@@ -79,45 +76,7 @@ header {
     max-width: 800px;
 }
 
-/* Estilos de Proyectos en la Sección de Portfolio */
 
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.project div {
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-.project a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    width: 100px;
-    text-decoration: none;
-}
-
-.project img {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.project img:hover {
-    transform: scale(1.05);
-}
-
-.project h3 {
-    margin-bottom: 10px;
-}
 
 /* Estilos del Pie de Página */
 
@@ -130,7 +89,7 @@ header {
 
 .navbar {
     padding: 2rem;
-    background-color: #1b1b32; /* Azul oscuro */
+    background-color:; /* Azul oscuro */
 }
 
 .navbar-collapse {
@@ -139,8 +98,11 @@ header {
 }
 
 /* Estilos de la Sección "Sobre Mí" */
-
+.about{
+	text-align:center;
+}
 .about img {
+	justify-content:center;
     display: block;
     margin: 20px auto;
     border-radius: 50%;
@@ -156,7 +118,7 @@ header {
 
 .seccion-clara {
     color: black;
-    background-color:white ;
+    background-color:white;
 }
 
 .experiencia .row div {
@@ -188,7 +150,7 @@ header {
 }
 
 .experiencia .columna:hover {
-    color: white;
+    color: grey;
     background-color: #1b1b32;
 }
 
@@ -211,57 +173,7 @@ header {
     color: #584e4e;
 }
 
-.proyectos-recientes img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
-}
 
-.proyectos-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
-}
-
-.overlay {
-    transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.proyecto:hover {
-    position: relative;
-}
-
-.proyecto:hover img {
-    opacity: 0.2;
-}
-
-.proyecto:hover .overlay {
-    opacity: 1;
-}
-
-.overlay .iconos-contenedor {
-    display: flex;
-}
-
-.overlay i {
-    color: black;
-    font-size: 60px;
-    margin: 10px;
-}
 
 @media screen and (max-width: 600px) {
     body {
@@ -353,7 +265,7 @@ header {
 }
 
 .contact .seccion-descripcion {
-    color: white;
+    color:black;
     font-size: 1.2rem;
 }
 
@@ -405,9 +317,9 @@ footer-texto {
 }
 
 .iconos-redes-sociales a {
+	
     width: 50px;
-    width: 50px;
-    height: 500px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -444,4 +356,4 @@ footer-texto {
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
-    
+	}
